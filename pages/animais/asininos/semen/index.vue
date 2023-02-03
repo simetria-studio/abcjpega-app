@@ -1,20 +1,10 @@
 <template>
-  <div>
+  <div class="my-8">
     <div class="m-4 text-red-900">
       <nuxt-link to="/animais/asininos">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-8 h-8"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
         </svg>
       </nuxt-link>
     </div>
@@ -22,74 +12,59 @@
       <h1>Inscrição de doador de sêmen</h1>
     </div>
 
-    <component
-      v-bind:is="steps[currentStep].components"
-      v-bind:formSemen="formSemen[steps[currentStep].label]"
-    />
-
+    <form>
+      <step-one v-if="currentStep === 1" />
+      <step-two v-if="currentStep === 2" />
+    </form>
     <div class="flex items-center justify-center space-x-3 mt-5">
-      <button
-        v-if="currentStep !== 0"
-        v-on:click="previous"
-        class="text-md bg-red-900 hover:bg-red-900 focus:ring-2 focus:ring-red-900/50 text-white p-2 rounded-2xl drop-shadow-xl"
-      >
-        Anterior
-      </button>
+      <div v-if="currentStep > 1">
+        <button type="button"
+          class="border border-red-900 bg-red-900 focus:outline-none  focus:ring-1 focus:ring-red-200 text-white p-2 rounded-xl drop-shadow"
+          v-on:click="prevStep">
+          Anterior
+        </button>
+      </div>
 
-      <button
-        class="text-md bg-red-900 hover:bg-red-900 focus:ring-2 focus:ring-red-900/50 text-white p-2 rounded-2xl drop-shadow-xl"
-        v-if="currentStep < steps.length - 1"
-        v-on:click="next"
-      >
-        Próximo
-      </button>
+      <div v-if="currentStep < 2">
+        <button type="button"
+          class="border border-red-900 bg-red-900 focus:outline-none focus:ring-1 focus:ring-red-200 text-white p-2 rounded-xl drop-shadow"
+          v-on:click="nextStep">
+          Próximo
+        </button>
+      </div>
 
-      <button
-        v-else
-        class="text-md bg-red-900 hover:bg-red-900 focus:ring-2 focus:ring-red-900/50 text-white p-2 rounded-2xl drop-shadow-xl"
-        v-on:click="submit"
-      >
-        Concluír
-      </button>
+      <div v-if="currentStep === 2">
+        <button type="submit"
+          class="border border-red-900 bg-red-900 focus:outline-none focus:ring-1 focus:ring-red-200 text-white p-2 rounded-xl drop-shadow">
+          Enviar
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import identificacaoSemen from "./Steps/identificacao";
-import motivoSemen from "./Steps/motivo";
+import StepOne from "./step-one.vue";
+import StepTwo from "./step-two.vue";
 
 export default {
-  name: "semen",
-  layout: "default",
+  components: {
+    StepOne,
+    StepTwo,
+  },
   data() {
     return {
-      currentStep: 0,
-      formSemen: {
-        identificacaoSemen: {},
-        motivoSemen: {},
-      },
-      steps: [
-        {
-          components: identificacaoSemen,
-        },
-        {
-          components: motivoSemen,
-        },
-      ],
+      currentStep: 1,
     };
   },
   methods: {
-    next() {
-      this.currentStep += 1;
+    nextStep() {
+      this.currentStep++;
     },
-    previous() {
-      this.currentStep -= 1;
+    prevStep() {
+      this.currentStep--;
     },
   },
-  components: {
-    identificacaoSemen,
-    motivoSemen,
-  },
+
 };
 </script>

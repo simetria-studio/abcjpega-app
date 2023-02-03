@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="my-8">
         <div class="m-4 text-red-900">
             <nuxt-link to="/animais/">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -27,7 +27,7 @@
                     <div class="p-2">
                         <label for="nome_animal" class="font-medium text-zinc-600">Nome do animal</label>
                         <input type="text" id="nome_animal"
-                            class="p-1 mt-1 bg-zinc-200 text-center font-medium text-zinc-600 border-2  focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
+                            class="p-1 mt-1 bg-zinc-100 border border-zinc-100 drop-shadow text-center font-medium text-zinc-600 border-2  focus:outline-none focus:ring-1 focus:ring-red-200 focus:border-red-800 w-full   rounded-md">
                     </div>
                 </div>
 
@@ -35,7 +35,7 @@
                     <div class="p-2">
                         <label for="idade_animal" class="font-medium text-zinc-600">Idade</label>
                         <input type="number" id="idade_animal" min="0" max="100"
-                            class="p-1 mt-1 bg-zinc-200 text-center font-medium text-zinc-600 border-2  focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md"
+                            class="p-1 mt-1 bg-zinc-100 border border-zinc-100 drop-shadow text-center font-medium text-zinc-600 border-2  focus:outline-none focus:ring-1 focus:ring-red-200 focus:border-red-800 w-full  rounded-md"
                             value="0">
                     </div>
                 </div>
@@ -44,7 +44,7 @@
                     <div class="p-2">
                         <label for="sexo_animal" class="font-medium text-zinc-600">Sexo</label>
                         <select name="" id="sexo_animal"
-                            class="p-1 mt-1 bg-zinc-200 text-center font-medium text-zinc-600 border-2 placeholder:text-zinc-600 placeholder:font-medium focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
+                            class="p-1 mt-1 bg-zinc-100 border border-zinc-100 drop-shadow text-center font-medium text-zinc-600 border-2 placeholder:text-zinc-600 placeholder:font-medium focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
                             <option value="0">Macho</option>
                             <option value="1">Fêmea</option>
                         </select>
@@ -55,7 +55,7 @@
                     <div class="p-2">
                         <label for="pelagem_animal" class="font-medium text-zinc-600">Variedade de pelagem</label>
                         <input type="text" id="pelagem_animal"
-                            class="p-1 mt-1 bg-zinc-200 text-center font-medium text-zinc-600 border-2 placeholder:text-zinc-600 placeholder:font-medium focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
+                            class="p-1 mt-1 bg-zinc-100 border-zinc-100 drop-shadow text-center font-medium text-zinc-600 border-2 placeholder:text-zinc-600 placeholder:font-mediu2 focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
                     <div class="p-2">
                         <label for="livro_aberto" class="font-medium text-zinc-600">Livro aberto</label>
                         <input type="text" id="livro_aberto"
-                            class="p-1 mt-1 bg-zinc-200 text-center font-medium text-zinc-600 border-2 placeholder:text-zinc-600 placeholder:font-medium focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
+                            class="p-1 mt-1 bg-zinc-100 border-zinc-100 drop-shadow text-center font-medium text-zinc-600 border-2 placeholder:text-zinc-600 placeholder:font-mediu2 focus:outline-none focus:ring-1 focus:ring-red-300 focus:border-red-900 w-full shadow-sm sm:text-sm  rounded-md">
                     </div>
                 </div>
             </div>

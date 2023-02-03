@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="my-8">
         <div class="m-4 text-red-900">
             <nuxt-link to="/animais/">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -12,33 +12,21 @@
             <h1>Equinos</h1>
         </div>
 
-        <div class="grid grid-cols-2 gap-4 mx-4">
-            <div class="p-5 rounded-xl text-white bg-red-900 shadow-xl text-center">
-                <nuxt-link class=" " to="/animais/equinos/semen">
-                    <img class="mx-auto h-20" src="~/assets/img/caval-semen.png" alt="" />
-                    <div class="my-1">
-                        <span class="text-sm"> Inscrição para doador de sêmen </span>
-                    </div>
-                </nuxt-link>
-            </div>
-            <div class="p-5 rounded-xl text-white bg-red-900 shadow-xl text-center">
-                <nuxt-link class="" to="/animais/equinos/embriao">
-                    <img class="mx-auto h-20" src="~/assets/img/caval-embriao.png" alt="" />
-                    <div class="my-1">
-                        <span class="text-sm"> Inscrição para doadora de embrião </span>
-                    </div>
-                </nuxt-link>
-            </div>
-            <div class="p-5 rounded-xl text-white bg-red-900 shadow-xl text-center">
-                <nuxt-link class="" to="/animais/equinos/pelagem">
-                    <img class="mx-auto h-20" src="~/assets/img/perga.png" alt="" />
-                    <div class="my-1">
-                        <span class="text-sm">
-                            Registro de lã e varidedade de pelagem
-                        </span>
-                    </div>
-                </nuxt-link>
-            </div>
+        <div class="mx-10 grid grid-cols-2 gap-8 grid-rows-2 text-center text-white text-sm">
+            <nuxt-link class="rounded-2xl border-red-900 bg-red-900 p-4 w-full " to="/animais/equinos/semen">
+                <img class="mx-auto h-20" src="~/assets/img/caval-semen.png" alt="" />
+                Inscrição para doador de sêmen
+            </nuxt-link>
+
+            <nuxt-link class="rounded-2xl border-red-900 bg-red-900 p-4 w-full" to="/animais/equinos/embriao">
+                <img class="mx-auto h-20" src="~/assets/img/caval-embriao.png" alt="" />
+                Inscrição para doadora de embrião
+            </nuxt-link>
+
+            <nuxt-link class="rounded-2xl border-red-900 bg-red-900 p-4 w-full" to="/animais/equinos/pelagem">
+                <img class="mx-auto h-20" src="~/assets/img/perga.png" alt="" />
+                Registro de lã e varidedade de pelagem
+            </nuxt-link>
         </div>
     </div>
 </template>

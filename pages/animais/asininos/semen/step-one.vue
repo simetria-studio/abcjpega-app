@@ -1,6 +1,5 @@
 <template>
-  <div>
-
+  <div class="my-8">
     <div class="text-center m-4 p-4 text-lg font-medium text-zinc-500">
       <p>
         Tendo em vista o nosso interesse em utilizar a inseminação artificial
@@ -18,14 +17,14 @@
       <div>
         <div class=" mb-3">
           <input
-            class="text-center text-gray-600 font-medium p-2 rounded-2xl bg-zinc-300 placeholder:text-gray-600 placeholder:font-medium focus:outline-none focus:border-1 focus:border-red-900 focus:ring-2 focus:ring-red-700"
+            class="text-center text-gray-600 drop-shadow font-medium p-2 rounded-2xl bg-zinc-100 placeholder:text-gray-600 placeholder:font-medium focus:outline-none focus:border focus:border-red-900 focus:ring-1 focus:ring-red-700"
             type="text"
             placeholder="Nome de reprodutor"
           />
         </div>
         <div class="mb-3">
           <input
-            class="text-center text-gray-600 font-medium p-2 rounded-2xl bg-zinc-300 placeholder:text-gray-600 placeholder:font-medium focus:outline-none focus:border-1 focus:border-red-900 focus:ring-2 focus:ring-red-700"
+            class="text-center text-gray-600 drop-shadow font-medium p-2 rounded-2xl bg-zinc-100 placeholder:text-gray-600 placeholder:font-medium focus:outline-none focus:border focus:border-red-900 focus:ring-1 focus:ring-red-700"
             type="text"
             placeholder="Número do registro"
           />
@@ -35,9 +34,4 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "identificacaoSemen",
-  layout: "default",
-};
-</script>
+
