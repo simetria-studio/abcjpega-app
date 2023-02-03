@@ -3,20 +3,23 @@
     <div class="titulo text-center mb-5">
       <h1 class="text-2xl font-medium text-zinc-600">Motivo</h1>
     </div>
-    <div class="mx-10 w-80 my-10">
-      <div class="radio-container mx-auto mb-5">
+    <div class="mx-10 w-80">
+
+      <div class="radio-container mb-5">
         <label>
-          <input type="radio" name="motivo" />
+          <input type="radio" name="motivo">
           <div class="custom-radio">
             <span></span>
           </div>
-          <span class="font-medium text-gray-900">Matriz de alto nível</span>
+          <span class="font-medium text-gray-900">
+            Reprodutor de alto nível
+          </span>
         </label>
       </div>
 
-      <div class="radio-container mx-auto mb-5">
+      <div class="radio-container mb-5">
         <label>
-          <input type="radio" name="motivo" />
+          <input type="radio" name="motivo">
           <div class="custom-radio">
             <span></span>
           </div>
@@ -29,8 +32,3 @@
   </div>
 </template>
 
-<script>
-export default {
-  layout: "default",
-};
-</script>

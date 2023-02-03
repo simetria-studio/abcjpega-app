@@ -31,35 +31,3 @@
     </div>
 </template>
 
-<script>
-export default {
-    name: 'equinos',
-    layout: 'default',
-    data() {
-        return {
-            // ...
-        }
-    },
-    methods: {
-        // ...
-    },
-    computed: {
-        // ...
-    },
-    watch: {
-        // ...
-    },
-    mounted() {
-        // ...
-    },
-    created() {
-        // ...
-    },
-    beforeDestroy() {
-        // ...
-    },
-    destroyed() {
-        // ...
-    }
-}
-</script>
