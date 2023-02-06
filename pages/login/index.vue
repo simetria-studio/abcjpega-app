@@ -1,5 +1,5 @@
 <template>
-  <div class="grid place-items-center h-[calc(100vh-50px)]">
+  <div class="grid place-items-center h-screen">
     <div class="text-center">
       <div class="flex justify-center mb-5">
         <img src="~/assets/img/home.png" class="w-32" alt="" />
@@ -33,8 +33,9 @@
 </template>
 
 <script>
+definePageMeta({ layout: 'auth' });
 export default {
-  layout: 'auth',
+  
   name: "login",
 
 };
