@@ -1,7 +1,7 @@
 <template>
   <div class="my-8">
     <nuxt-link to="/">
-      <img src="../assets/img/home.png" class="mx-auto w-36 h-26 text-red-900" alt="" />
+      <img src="~/assets/img/home.png" class="mx-auto w-36 h-26 text-red-900" alt="" />
     </nuxt-link>
     <div class="flex justify-center my-8 text-lg font-medium">
       <p>

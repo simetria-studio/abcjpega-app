@@ -1,6 +1,14 @@
 <template>
-    <div>
-        <div class="my-8">
+    <div class="my-8">
+        <div class="m-4 text-red-900">
+            <nuxt-link @click="goBack" class="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                </svg>
+            </nuxt-link>
+        </div>
+        <div class="mb-5">
             <h1 class="text-center text-xl font-medium">Cobrição</h1>
         </div>
         <div class="w-52 mx-auto ">
@@ -31,3 +39,13 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    methods: {
+        goBack() {
+            this.$router.go(-1)
+        }
+    }
+}
+</script>

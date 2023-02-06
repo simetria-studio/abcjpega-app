@@ -1,12 +1,6 @@
 <template>
-  <div class="h-screen">
-    <Nuxt />
+  <div>
+    <slot />
   </div>
 </template>
 
-<script>
-export default {
-  name: "",
-  layout: "auth",
-};
-</script>

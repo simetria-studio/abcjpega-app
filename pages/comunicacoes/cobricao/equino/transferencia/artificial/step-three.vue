@@ -26,11 +26,3 @@
 
 </template>
 
-<script>
-export default {
-    name: "step3",
-    layout: "default",
-
-
-}
-</script>
