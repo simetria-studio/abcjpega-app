@@ -18,21 +18,37 @@
             <form action="">
                 <div class="mb-4">
                     <label for="reprodutor">Reprodutor</label>
-                    <input type="text" name="reprodutor" id="reprodutor" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                    <input type="text" name="reprodutor" id="reprodutor"
+                        class="w-full border bg-zinc-100 drop-shadow border-zinc-100 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
                 </div>
                 <div class="mb-4">
                     <label for="doadora">Doadora</label>
-                    <input type="text" name="doadora" id="doadora" class="w-full border border-gray-300 rounded-lg p-2  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                    <input type="text" name="doadora" id="doadora"
+                        class="w-full border bg-zinc-100 drop-shadow border-zinc-100 rounded-lg p-2  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
                 </div>
                 <div class="mb-4">
                     <label for="receptora">Receptora</label>
-                    <input type="text" name="receptora" id="receptora" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                    <input type="text" name="receptora" id="receptora"
+                        class="w-full border bg-zinc-100 drop-shadow border-zinc-100 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
                 </div>
                 <div class="mb-4">
                     <label for="data-cobricao">Data da Cobrição</label>
-                    <input type="date" name="data-cobricao" id="data-cobricao" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                    <input type="date" name="data-cobricao" id="data-cobricao"
+                        class="w-full border bg-zinc-100 drop-shadow border-zinc-100 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
                 </div>
-                <button type="submit" class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200" >Protocolar</button>
+                <div class="mb-4">
+                    <label for="data-transferencia">Data da Transferência</label>
+                    <input type="date" name="data-transferencia" id="data-transferencia"
+                        class="w-full border bg-zinc-100 drop-shadow border-zinc-100 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                </div>
+                <div class="mb-4">
+                    <label for="data-inseminacao">Data da Inseminação</label>
+                    <input type="date" name="data-inseminacao" id="data-inseminacao"
+                        class="w-full border bg-zinc-100 drop-shadow border-zinc-100 rounded-lg p-2 focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                </div>
+
+                <button type="submit"
+                    class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Protocolar</button>
             </form>
         </div>
     </div>

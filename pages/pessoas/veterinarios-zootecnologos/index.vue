@@ -20,10 +20,10 @@
         <img class="mx-auto my-2 w-16 h-16" src="~/assets/img/doctor.png" alt="" />
         Veterinários
       </Nuxt-Link>
-      <Nuxt-Link to="/pessoas/veterinarios-zootecnologos/zootecnologos"
+      <Nuxt-Link to="/pessoas/veterinarios-zootecnologos/zootecnistas"
         class="rounded-2xl border-red-400 bg-red-900 p-4 w-full h-full">
         <img class="mx-auto my-2 w-16 h-16" src="~/assets/img/doctor.png" alt="" />
-        Zootecnólogos
+        Zootecnistas
       </Nuxt-Link>
     </div>
   </div>

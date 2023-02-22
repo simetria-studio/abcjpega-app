@@ -1,32 +1,9 @@
 <template>
     <div class="m-8">
-        <div class="flex justify-center">
-            <img src="~/assets/img/esquerda.png" alt="">
+        <div class="flex justify-center mb-8">
+            <img src="~/assets/img/lado-esquerdo.svg" alt="">
         </div>
         <div class="text-center">
-            <p class="font-semibold mb-3">Anexar imagens do animal (Esquerda)</p>
-            <div class="grid grid-cols-3  mb-5">
-                <div class="w-32 h-32 drop-shadow flex items-center justify-center">
-                    <img src="" alt="" class="w-full h-full">
-                </div>
-                <div class="w-32 h-32 drop-shadow flex items-center justify-center">
-                    <img src="" alt="" class="w-full h-full">
-                </div>
-                <div class="w-32 h-32 drop-shadow flex items-center justify-center">
-                    <img src="" alt="" class="w-full h-full">
-                </div>
-            </div>
-
-            <div class="flex justify-center mb-5">
-                <label for="animal_frontal" class="cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-10 h-10">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                    </svg>
-                </label>
-                <input type="file" class="hidden" name="animal_frontal" id="animal_frontal">
-
-            </div>
             <div >
                 <button type="button" class="flex"> 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"

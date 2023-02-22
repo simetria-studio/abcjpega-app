@@ -14,17 +14,17 @@
       </nuxt-link>
       <div class="text-center text-lg font-medium mt-3">
         <p>
-          Zootécnologos credenciados <br />
+          Zootécnistas credenciados <br />
           <strong class="text-red-900"> ABCJPEGA </strong>
         </p>
       </div>
     </div>
 
     <div class="mx-10">
-      <div class="rounded-2xl border-red-400 bg-red-900 p-6 text-white text-center mb-5 w-36 mx-auto">
+      <!-- <div class="rounded-2xl border-red-400 bg-red-900 p-6 text-white text-center mb-5 w-36 mx-auto">
         <img src="~/assets/img/doctor.png" alt="Icone de veterinário" class="mx-auto my-2 w-9 h-9" />
         Zootécnologos
-      </div>
+      </div> -->
       <form class="space-y-3 w-72 mx-auto mb-5" action="">
         <p class="text-base font-medium text-center">buscar por</p>
         <input
@@ -45,7 +45,7 @@
           Buscar
         </button>
       </div>
-      <div class="py-4 text-center text-black">
+      <div class="py-4 text-center font-medium text-black">
         <p>Resultados</p>
       </div>
       <div class="w-full py-4 mb-5 rounded-xl bg-zinc-100 overflow-y-auto">

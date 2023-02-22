@@ -4,7 +4,7 @@
             <h1 class="text-center text-xl">Selecionar médico veterinario</h1>
         </div>
         <div class="mb-4">
-            <h1 class="text-center mb-4">Buscar por:</h1>
+            <h1 class="text-center font-medium mb-4">Buscar por:</h1>
             <div class="w-60 mx-auto">
                 <div class="radio-container mb-2">
                     <label for="fresco">
@@ -44,11 +44,13 @@
                                 d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                     </label>
-                    <button
-                        class="mt-4 border border-red-900 rounded-2xl p-1 px-4 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Buscar</button>
+                    <button type="button"
+                        class="mt-4 border border-red-900 rounded-2xl p-1 px-4 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
+                        Buscar
+                    </button>
                 </div>
-                <div class="bg-zinc-200 h-52 w-full rounded-lg p-4 overflow-y-auto ">
 
+                <div class="bg-zinc-200 h-52 w-full rounded-lg p-4 overflow-y-auto ">
                     <div class="border-b-2 border-red-900 py-1 ">
                         <div class="radio-container">
                             <label for="user_01" class="flex justify-between">
@@ -67,14 +69,14 @@
                                         <h1 class="text-sm">Endereço</h1>
                                     </div>
                                 </span>
-        
+
                             </label>
                         </div>
                     </div>
                     <div class="border-b-2 border-red-900 py-1 ">
                         <div class="radio-container">
                             <label for="user_02" class="flex justify-between">
-                                <input type="radio" id="user_02" name="veterinario" >
+                                <input type="radio" id="user_02" name="veterinario">
                                 <div class="custom-radio">
                                     <span></span>
                                 </div>
@@ -93,19 +95,8 @@
                             </label>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </div>
 </template>
-
-<script>
-export default {
-    name: "step2",
-    layout: "default",
-
-
-}
-</script>

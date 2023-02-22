@@ -1,7 +1,7 @@
 <template>
     <div class="my-8">
         <div class="m-4 text-red-900">
-            <nuxt-link @click="goBack" class="">
+            <nuxt-link @click="goBack">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
@@ -11,7 +11,7 @@
         <div class="mb-5">
             <h2 class="text-center font-semibold text-2xl">Cobrição</h2>
         </div>
-        <form action="">
+        <form>
             <step-one v-if="currentStep === 1" />
             <step-two v-if="currentStep === 2" />
             <step-three v-if="currentStep === 3" />
@@ -24,15 +24,13 @@
                     <button @click="nextStep" type="button"
                         class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Próximo</button>
                 </div>
-                <div v-if="currentStep === 3"
-                    class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">
-                    <button type="submit">Enviar</button>
+                <div v-if="currentStep === 3">
+                    <button type="submit"
+                        class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Enviar</button>
                 </div>
             </div>
         </form>
-
     </div>
-
 </template>
 
 <script>

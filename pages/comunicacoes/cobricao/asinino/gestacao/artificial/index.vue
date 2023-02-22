@@ -8,35 +8,35 @@
                 </svg>
             </nuxt-link>
         </div>
-        <div class="my-4">
+        <div class="mb-5">
             <h2 class="text-center font-semibold text-2xl">Cobrição</h2>
         </div>
         <form>
             <step-one v-if="currentStep === 1" />
             <step-two v-if="currentStep === 2" />
             <step-three v-if="currentStep === 3" />
+            <div class="flex justify-center items-center space-x-3">
+                <div v-if="currentStep > 1">
+                    <button @click="prevStep" type="button"
+                        class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Anterior</button>
+                </div>
+                <div v-if="currentStep < 3">
+                    <button @click="nextStep" type="button"
+                        class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Próximo</button>
+                </div>
+                <div v-if="currentStep === 3">
+                    <button type="submit"
+                        class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Enviar</button>
+                </div>
+            </div>
         </form>
-        <div class="flex justify-center items-center space-x-3">
-            <div v-if="currentStep > 1">
-                <button @click="prevStep"
-                    class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Anterior</button>
-            </div>
-            <div v-if="currentStep < 3">
-                <button @click="nextStep"
-                    class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Próximo</button>
-            </div>
-            <div v-if="currentStep === 3">
-                <button type="submit"
-                    class="border border-red-900 rounded-lg p-2 bg-red-900 text-white hover:bg-red-800  focus:outline-none focus:border-red-900 focus:ring focus:ring-red-200">Enviar</button>
-            </div>
-
-        </div>
     </div>
 </template>
+
 <script>
-import StepOne from "./step-one.vue";
-import StepTwo from "./step-two.vue";
-import StepThree from "./step-three.vue";
+import StepOne from "./step-one";
+import StepTwo from "./step-two";
+import StepThree from "./step-three";
 export default {
     name: "gestacao-artificial",
     layout: "default",
@@ -53,14 +53,14 @@ export default {
     },
 
     methods: {
-        goBack() {
-            this.$router.go(-1)
-        },
         nextStep() {
             this.currentStep++;
         },
         prevStep() {
             this.currentStep--;
+        },
+        goBack() {
+            this.$router.go(-1)
         },
     },
 };

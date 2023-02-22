@@ -14,25 +14,25 @@
         <div class="w-52 mx-auto ">
             <div class="flex mb-5">
                 <input type="text"
-                    class="text-center text-black placeholder:text-black bg-zinc-100 p-1 rounded drop-shadow-xl shadow-lg   border-2 border-red-900 focus:ring-2  focus:ring-red-300   focus:outline-none  focus:border-red-900 "
+                    class="text-center text-black placeholder:text-black bg-zinc-100 p-1 rounded drop-shadow border border-zinc-100 focus:ring-1 focus:ring-red-200 focus:outline-none  focus:border-red-900"
                     placeholder="Reprodutor">
             </div>
             <div class="flex mb-5">
                 <input type="text"
-                    class="text-center text-black placeholder:text-black bg-zinc-100 p-1 rounded drop-shadow-xl shadow-lg  border-2 border-red-900 focus:ring-2  focus:ring-red-300   focus:outline-none  focus:border-red-900 "
+                    class="text-center text-black placeholder:text-black bg-zinc-100 p-1 rounded drop-shadow border border-zinc-100 focus:ring-1 focus:ring-red-200 focus:outline-none  focus:border-red-900"
                     placeholder="Matriz">
             </div>
-            <div class="flex   mb-5">
+            <div class="flex mb-5">
                 <label for="date-cobricao">Data da cobrição
                     <br>
                     <input type="date" name="date-cobricao" id="date-cobricao"
-                        class=" text-center text-black placeholder:text-black bg-zinc-100 p-1 rounded drop-shadow-xl shadow-lg  border-2 border-red-900 focus:ring-2  focus:ring-red-300   focus:outline-none  focus:border-red-900 ">
+                        class=" text-center text-black placeholder:text-black bg-zinc-100 p-1 rounded drop-shadow  border border-zinc-100 focus:ring-1 focus:ring-red-200 focus:outline-none focus:border-red-900 ">
                 </label>
             </div>
 
             <div class="flex mb-5">
-                <button
-                    class="bg-red-900 hover:bg-red-800 active:bg-red-700 focus:outline-none focus:ring focus:ring-red-800 text-white p-2 rounded  w-24">Salvar
+                <button type="submit"
+                    class="border border-red-900 bg-red-900 focus:outline-none focus:ring focus:ring-red-200 text-white p-2 rounded  w-24">Salvar
                 </button>
             </div>
 
