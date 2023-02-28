@@ -12,7 +12,11 @@ export default defineNuxtConfig({
         { hid: "description", name: "description", content: "" },
         { name: "format-detection", content: "telephone=no" },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+       
+      ],
+
       script: [
         {
           src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",

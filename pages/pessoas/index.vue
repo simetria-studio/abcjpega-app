@@ -21,8 +21,8 @@
         <img class="mx-auto my-2 w-16 h-16" src="~/assets/img/criadores.png" alt="" />
         Criadores
       </Nuxt-Link>
-      <Nuxt-Link to="/pessoas/arbitros" class="rounded-2xl border-red-400 bg-red-900 p-4 w-full ">
-        <img class="mx-auto my-2 w-16 h-16" src="~/assets/img/criadores.png" alt="" />
+      <Nuxt-Link to="/pessoas/arbitros" class=" rounded-2xl border-red-400 bg-red-900 p-4 w-full">
+        <img class="mx-auto my-2 w-16 h-16" src="~/assets/img/arbitro.svg" alt="">
         Árbitros
       </Nuxt-Link>
       <Nuxt-Link to="/pessoas/parceiros" class="rounded-2xl border-red-400 bg-red-900 p-4 w-full ">
