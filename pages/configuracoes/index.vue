@@ -47,6 +47,7 @@
     </div>
 </template>
 <script>
+import Cookie from "js-cookie";
 export default {
     name: "",
     layout: "default",
@@ -65,7 +66,11 @@ export default {
         // Watch
     },
     mounted() {
-        // Mounted
-    },
+    const token = Cookie.get("_access_token");
+
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }
 }
 </script>

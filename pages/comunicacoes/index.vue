@@ -61,8 +61,16 @@
 </template>
 
 <script>
+import Cookie from "js-cookie";
 export default {
   name: "comunicacoes",
-  layout: "default"
+  layout: "default",
+  mounted() {
+    const token = Cookie.get("_access_token");
+
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }
 }
 </script>

@@ -93,11 +93,19 @@
 </template>
 
 <script>
+import Cookie from "js-cookie";
 export default {
     methods: {
         goBack() {
             this.$router.go(-1)
         }
+    },
+    mounted() {
+    const token = Cookie.get("_access_token");
+
+    if (!token) {
+      window.location.href = "/login";
     }
+  }
 }
 </script>

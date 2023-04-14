@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import Cookie from "js-cookie";
 export default {
   layout: "default",
   methods: {
@@ -45,5 +46,12 @@ export default {
       this.$router.go(-1);
     },
   },
+  mounted() {
+    const token = Cookie.get("_access_token");
+
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }
 };
 </script>

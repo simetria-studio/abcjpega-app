@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-export default defineNuxtConfig({
+export default {
   app: {
     head: {
       title: "abcjpega",
@@ -12,18 +12,11 @@ export default defineNuxtConfig({
         { hid: "description", name: "description", content: "" },
         { name: "format-detection", content: "telephone=no" },
       ],
-      link: [
-        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-       
-      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 
       script: [
         {
           src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
-          type: "text/javascript",
-        },
-        {
-          src: "/assets/js/script.js",
           type: "text/javascript",
         },
         {
@@ -42,5 +35,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  middleware: ["auth"],
   components: true,
-});
+  plugins: [{ src: "@/plugins/axios.js" }],
+
+};

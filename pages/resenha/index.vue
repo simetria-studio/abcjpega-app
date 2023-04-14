@@ -49,7 +49,7 @@ import stepSix from './step-six.vue'
 import stepSeven from './step-seven.vue'
 import stepEight from './step-eight.vue'
 
-
+import Cookie from "js-cookie";
 
 export default {
     components: {
@@ -75,6 +75,13 @@ export default {
         prevStep() {
             this.currentStep--
         }
+    },
+    mounted() {
+    const token = Cookie.get("_access_token");
+
+    if (!token) {
+      window.location.href = "/login";
     }
+  }
 }
 </script>

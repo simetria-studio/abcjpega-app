@@ -144,7 +144,7 @@
 
 <script>
 
-
+import Cookie from "js-cookie";
 
 export default {
     name: "",
@@ -158,7 +158,13 @@ export default {
         };
 
     },
+    mounted() {
+    const token = Cookie.get("_access_token");
 
+    if (!token) {
+      window.location.href = "/login";
+    }
+  }
 
 };
 
