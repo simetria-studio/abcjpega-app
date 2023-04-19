@@ -46,26 +46,24 @@ export default {
 
   methods: {
     async login(res) {
-      await this.$axios
-        .post("auth/login", {
-          email: this.email,
-          password: this.password,
-        })
+      await this.$axios.post("auth/login", {
+        email: this.email,
+        password: this.password,
+      })
         .then(function (response) {
           Cookie.set("_access_token", response.data.access_token);
           window.location.href = "/";
         })
         .catch(function (error) {
           console.log(error);
-          // Swal.fire({
-          //   title: "Erro!",
-          //   text: "E-mail ou senha incorretos!",
-          //   icon: "error",
-          // });
+          Swal.fire({
+            title: "Erro!",
+            text: "E-mail ou senha incorretos!",
+            icon: "error",
+          });
         });
     },
   },
-
 };
 
 </script>

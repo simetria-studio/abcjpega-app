@@ -24,6 +24,10 @@ export default {
           src: "https://www.gstatic.com/charts/loader.js",
           defer: true,
         },
+        {
+          src: "https://cdn.jsdelivr.net/npm/sweetalert2@11",
+          type: "text/javascript",
+        },
       ],
     },
   },
@@ -38,5 +42,5 @@ export default {
   middleware: ["auth"],
   components: true,
   plugins: [{ src: "@/plugins/axios.js" }],
-
+  serverMiddleware: [{ path: "/api/register/store", handler: "~/api/register.js" }],
 };
