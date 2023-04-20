@@ -1,7 +1,7 @@
 <template>
     <div class="m-8">
         <div class="flex justify-center mb-8">
-            <img src="~/assets/img/direita.svg" alt="">
+            <img src="~/assets/img/direita.png" alt="">
         </div>
         <div class="text-center">
             <div >
