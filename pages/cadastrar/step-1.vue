@@ -49,7 +49,7 @@
             <div class="sm:col-span-3">
                 <label for="cidade_nascimento" class="block text-sm font-medium leading-6 text-gray-900">Cidade de
                     nascimento</label>
-                <div class="mt-2">
+                <div class="mt-2 ls">
                     <input type="text" name="cidade_nascimento" id="cidade_nascimento" v-model="cidade_nascimento"
                         class="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400  sm:text-sm sm:leading-6">
                 </div>
